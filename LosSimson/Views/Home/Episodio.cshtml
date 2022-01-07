@@ -1,0 +1,46 @@
+﻿@model LosSimson.Models.Episodio
+@{
+    ViewData["Title"] = "Episodio";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="~/estilos/estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <header>
+            <h1><a href="/">LOS SIMPSON - GUIA DE EPISODIOS</a></h1>
+            <h2>The Simpsons</h2>
+        </header>
+        <main>
+            <h1></h1>
+            <section class="episodio">
+                <div id="foto">
+                    <img src="~/imagenes-episodios/@(Model.Id).jpg" />
+                </div>
+
+                <h2>@(Model.Numero). @(Model.Nombre)</h2>
+                <h3>(@(Model.NombreIngles) - @(Model.Fecha)</h3>
+
+                <h2>Trama:</h2>
+
+                <p>@Model.Trama.</p>
+
+                <q>
+                    Llama a tu mamá durante los comerciales.
+                </q>
+
+
+            </section>
+        </main>
+        <footer>
+            <a href="~/Episodios">Regresar a la temporada</a>
+        </footer>
+    </form>
+</body>
+</html>
+

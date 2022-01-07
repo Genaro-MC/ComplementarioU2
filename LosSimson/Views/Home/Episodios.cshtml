@@ -1,0 +1,39 @@
+﻿@model IEnumerable<LosSimson.Models.Episodio>
+@{
+    ViewData["Title"] = "Episodios";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="~/estilos/estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <header>
+            <h1><a href="/">LOS SIMPSON - GUIA DE EPISODIOS</a></h1>
+            <h2>The Simpsons</h2>
+        </header>
+        <main>
+            <h1>
+                Lista de Episodios<br />
+                Temporada
+                @foreach (var x in Model)
+
+                {
+                    @(x.IdTemporadaNavigation.Numero)
+                }
+            </h1>
+            <ul>
+                @foreach (var item in Model)
+                {
+                    <li><a href="~/Episodio/@(item.Id)">@item.Nombre</a></li>
+                }
+
+            </ul>
+        </main>
+    </form>
+</body>
+</html>
+

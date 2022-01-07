@@ -1,0 +1,169 @@
+﻿@font-face {
+    font-family: Homer;
+    src: url(Homer_Simpson_Revised.ttf);
+}
+
+@font-face {
+    font-family: Simpson;
+    src: url(Simpsonfont.ttf);
+}
+
+html, body, form {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFD629;
+    font-family: Arial;
+}
+
+a {
+    color: #ED3133;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(images/The_Simpsons_Logo.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 60px;
+    font-family: Simpson;
+}
+
+    header h1 {
+        height: 40px;
+        margin: 10px 0 0 0;
+        padding: 0 10px;
+        font-size: 18pt;
+    }
+
+        header h1 a {
+            text-decoration: none;
+            color: #ED3133;
+        }
+
+    header h2 {
+        height: 20px;
+        line-height: 20px;
+        padding: 0 10px;
+        color: black;
+        font-size: 12pt;
+        margin: 0;
+    }
+
+
+main {
+    height: calc(100% - 140px);
+    margin: 80px 0 30px 0;
+    padding: 10px;
+    overflow: auto;
+    font-family: 'Segoe UI';
+}
+
+    main h1 {
+        text-align: center;
+        color: #ED3133;
+        margin: 0;
+        font-weight: normal;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #ed3133;
+    }
+
+
+
+    main ul {
+        color: #ED3133;
+        column-count: 2;
+        column-gap: 10px;
+        list-style-position: inside;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+        main ul a {
+            font-size: x-large;
+        }
+
+    main img {
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+    }
+
+footer {
+    height: 40px;
+    color: #ED3133;
+    width: calc(100% - 40px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 40px;
+    text-align: right;
+    padding: 0 20px
+}
+
+.episodio #foto {
+    width: 50%;
+    height:350px;
+    margin: 10px 0 30px 0;
+    float: left;
+    overflow:hidden;
+}
+
+#foto img{
+    max-width:100%;
+    max-height:400px;
+    width:auto;
+    margin:0 auto;
+    display:block;
+}
+
+
+
+.episodio h2 {
+    width: 48%;
+    float: right;
+    margin-bottom:0;
+    margin-left:2%;
+}
+
+.episodio h3 {
+    width: 46%;
+    float: right;
+    margin: 0;
+    margin-left: 4%;
+    color: #ED3133;
+    font-weight:normal;
+    font-size:medium;
+}
+
+.episodio p {
+    width: 46%;
+    margin-left: 4%;
+    float: right;
+    font-size: larger;
+}
+.episodio q {
+    clear: both;
+    display: block;
+    height: 100px;
+    width:500px;
+    margin:10px 100px;
+    background-image: url(images/bart.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    font-size:x-large;
+    padding-left:80px;
+    font-family:'Segoe Script';
+}
